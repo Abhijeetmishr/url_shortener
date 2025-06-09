@@ -9,6 +9,13 @@
     5. Once a shortened link is generated it should stay in system for lifetime
 
 - API DESIGN
-    - POST /v1/shorten-url
-        - URL (userName string , longURL string)
-    - GET API /<
+    - POST /v1/api/create
+        - REQUEST BODY (userName string , longURL string)
+        - RETURN OK(200)
+    - GET API /{short-url}
+        - RETURN REDIRECT(302)
+
+- SCHEMA DESIGN
+    - ID -> UNIQUE USER ID
+    - URL_LINK 
+    - CREATION_DATE
